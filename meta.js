@@ -93,5 +93,13 @@ module.exports = {
     "*/test/e2e/**/*": "e2e",
     "*/src/router/**/*": "router"
   },
-  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm install --registry=https://registry.npm.taobao.org\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+  complete (data) {
+    let path = require('path'), 
+      fs = require('fs'),
+      pre = data.inPlace ? '' : data.destDirName + '/',
+      dir = path.resolve(pre + 'project')
+    fs.rename(dir, dir.replace(/project$/g, data.project), function(err){})
+    let completeMessage = "\n  To get started:\n\n" + (!data.inPlace ? "  cd " + data.destDirName + "\n" : "") + "  npm install\n  npm install --registry=https://registry.npm.taobao.org\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+    console.log(completeMessage)
+  }
 };
