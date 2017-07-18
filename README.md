@@ -8,9 +8,14 @@
 
 ## Usage
 
+> So, enjoy!
+
 ``` bash
+$ npm install -g vue-cli
 $ vue init mlings/webpack my-project
+$ cd my-project
 $ npm i --registry=https://registry.npm.taobao.org
+$ npm run dev
 ```
 
 
