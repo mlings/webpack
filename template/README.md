@@ -9,7 +9,6 @@
 npm install
 
 # install dependencies with taobao mirror image
-
 npm install --registry=https://registry.npm.taobao.org
 
 # serve with hot reload at localhost:8080
