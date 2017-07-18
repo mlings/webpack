@@ -1,3 +1,11 @@
+# vue-webpack-single-folder
+
+> 基于官方的vue-webpack模板，用独立的工程文件夹来放置配置及源代码文件
+ 
+> 可以通过拷贝工程文件夹的方式来添加一个新的工程，然后在package.json中添加dev及build命令脚本即可
+
+> 使用独立工程文件夹只要是为了方便管理在一个项目中有几个类似后台管理的网站，同时又可以共用一套node_modules模块
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
