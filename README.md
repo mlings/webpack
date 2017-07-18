@@ -10,6 +10,7 @@
 
 ``` bash
 $ vue init mlings/webpack my-project
+$ npm i --registry=https://registry.npm.taobao.org
 ```
 
 
