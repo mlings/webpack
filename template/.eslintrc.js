@@ -25,7 +25,7 @@ module.exports = {
   'settings': {
     'import/resolver': {
       'webpack': {
-        'config': 'build/webpack.base.conf.js'
+        'config': '{{ project }}/build/webpack.base.conf.js'
       }
     }
   },
@@ -46,7 +46,7 @@ module.exports = {
     }],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
-      'optionalDependencies': ['test/unit/index.js']
+      'optionalDependencies': ['{{ project }}/test/unit/index.js']
     }],
     {{/if_eq}}
     // allow debugger during development
