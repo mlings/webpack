@@ -8,7 +8,9 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-runtime"],
+  "plugins": [
+    {{#if_eq babel "runtime"}}"transform-runtime"{{/if_eq}}
+  ],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],

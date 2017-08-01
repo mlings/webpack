@@ -49,6 +49,22 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
+    "babel": {
+      "type": "list",
+      "message": "Babel Mode",
+      "choices": [
+        {
+          "name": "babel polypill",
+          "value": "polypill",
+          "short": "polypill"
+        },
+        {
+          "name": "babel plugin transform runtime",
+          "value": "runtime",
+          "short": "runtime"
+        }
+      ]
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
