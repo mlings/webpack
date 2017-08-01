@@ -70,7 +70,7 @@ module.exports = {
           "short": "group"
         }
       ]
-    };
+    },
     "babel": {
       "type": "list",
       "message": "Babel Mode",
