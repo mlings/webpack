@@ -49,6 +49,28 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
+    "routerLazyload": {
+      "when": "router",
+      "type": "list",
+      "message": "Router Lazyload Mode",
+      "choices": [
+        {
+          "name": "all component use one file",
+          "value": "default",
+          "short": "default"
+        },
+        {
+          "name": "each component use unique file",
+          "value": "file",
+          "short": "file"
+        },
+        {
+          "name": "each component use custom group",
+          "value": "group",
+          "short": "group"
+        }
+      ]
+    };
     "babel": {
       "type": "list",
       "message": "Babel Mode",
