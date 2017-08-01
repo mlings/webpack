@@ -27,7 +27,7 @@
     {{#if_eq babel "runtime"}}
     "babel-plugin-transform-runtime": "^6.22.0",
     {{/if_eq}}
-    {{#if_eq babel "polyfill"}}
+    {{#if_eq babel "polypill"}}
     "babel-polyfill": "^6.23.0",
     {{/if_eq}}
     "babel-preset-env": "^1.3.2",
