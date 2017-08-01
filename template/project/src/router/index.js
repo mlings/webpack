@@ -8,7 +8,7 @@ import Hello from '@/components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 const Hello = resolve => require(['@/components/Hello'], resolve){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/if_eq}}
 {{#if_eq routerLazyload "group"}}
-const Hello = r => require.ensure([], () => r(require('@/components/Hello')), 'Hello'){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+const Hello = r => require.ensure([], () => r(require('@/components/Hello')), 'hello'){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/if_eq}}
 
 Vue.use(Router){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
